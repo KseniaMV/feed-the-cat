@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e0ca5fef8edea847b7b362213f75e81, type: 3}
+  m_Name: MeatballData
+  m_EditorClassIdentifier: 
+  foodType: 3
+  foodName: "\u0424\u0440\u0438\u043A\u0430\u0434\u0435\u043B\u044C\u043A\u0430 \u043C\u044F\u0441\u043D\u0430\u044F
+    \u0432 \u0442\u043E\u043C\u0430\u0442\u043D\u043E\u043C \u0441\u043E\u0443\u0441\u0435
+    \u0441 \u0431\u0430\u0437\u0438\u043B\u0438\u043A\u043E\u043C"
+  description: "\u0410\u0440\u043E\u043C\u0430\u0442\u043D\u0430\u044F \u0444\u0440\u0438\u043A\u0430\u0434\u0435\u043B\u044C\u043A\u0430
+    \u0432 \u0442\u043E\u043C\u0430\u0442\u043D\u043E\u043C \u0441\u043E\u0443\u0441\u0435,
+    \u043F\u0440\u0438\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043D\u0430\u044F
+    \u0431\u0430\u0437\u0435\u043B\u0438\u043A\u043E\u043C"
+  category: 1
+  rarity: 2
+  foodSprite: {fileID: 21300000, guid: efb97a0eb8d42be4589df1bcdb46ca0f, type: 3}
+  foodPrefab: {fileID: 9034276328224162342, guid: dfaaf2a8b2f214f4f98adc569683b632, type: 3}
+  experienceReward: 40
+  nextLevelFood: {fileID: 11400000, guid: 3719de89a3a026a4088286c2ff4d5fe4, type: 2}
+  requiredExperience: 1500
+  canSpawnAtStart: 0

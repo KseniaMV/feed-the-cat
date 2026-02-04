@@ -1,0 +1,4 @@
+<dependencies>
+   <!-- AdMob mediation removed to avoid Google AdMob SDK dependency -->
+   <!-- If you need mediation, configure it manually with specific adapters -->
+</dependencies>

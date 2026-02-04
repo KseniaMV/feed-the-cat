@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e0ca5fef8edea847b7b362213f75e81, type: 3}
+  m_Name: CaviarData
+  m_EditorClassIdentifier: 
+  foodType: 8
+  foodName: "\u0422\u0430\u0440\u0442\u0430\u043B\u0435\u0442\u043A\u0430 \u0441
+    \u043A\u0440\u0430\u0441\u043D\u043E\u0439 \u0438\u043A\u0440\u043E\u0439"
+  description: "\u0425\u0440\u0443\u0441\u0442\u044F\u0449\u0438\u0439 \u043A\u0440\u0435\u043A\u0435\u0440
+    \u0441\u043E \u0441\u043B\u0438\u0432\u043E\u0447\u043D\u044B\u043C \u043C\u0430\u0441\u043B\u043E\u043C
+    \u0438 \u043A\u0440\u0430\u0441\u043D\u043E\u0439 \u0438\u0433\u0440\u043E\u0439"
+  category: 3
+  rarity: 4
+  foodSprite: {fileID: 21300000, guid: b9e094d34e05add44bad15eb6127d93a, type: 3}
+  foodPrefab: {fileID: 2514143007899556152, guid: fade3a2bcb69320489b214d6d6c617c8, type: 3}
+  experienceReward: 400
+  nextLevelFood: {fileID: 11400000, guid: 87b828d297edd15408a041243ebb5275, type: 2}
+  requiredExperience: 0
+  canSpawnAtStart: 0

@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68b8ec433ffd47746b3b079ee0b17859, type: 3}
+  m_Name: EconomyConfig
+  m_EditorClassIdentifier: 
+  pawPrice: 75
+  catPrice: 150
+  sausageExperience: 0
+  eggsExperience: 10
+  sandwichExperience: 25
+  meatballExperience: 40
+  soupExperience: 60
+  chickenExperience: 95
+  salmonExperience: 150
+  shrimpExperience: 250
+  caviarExperience: 400
+  oysterExperience: 650
+  lobsterExperience: 1060
+  wormsThreshold: 400
+  betterThreshold: 1200
+  tastyThreshold: 1600
+  satisfiedThreshold: 2800
+  fullThreshold: 4400
+  happyThreshold: 7200
+  royalThreshold: 11600
+  eggsGoalReward: 10
+  sandwichGoalReward: 15
+  meatballGoalReward: 25
+  soupGoalReward: 40
+  chickenGoalReward: 65
+  salmonGoalReward: 105
+  shrimpGoalReward: 170
+  caviarGoalReward: 270
+  oysterGoalReward: 440
+  lobsterGoalReward: 710
+  eggsFirstDiscoveryReward: 50
+  sandwichFirstDiscoveryReward: 75
+  meatballFirstDiscoveryReward: 125
+  soupFirstDiscoveryReward: 200
+  chickenFirstDiscoveryReward: 320
+  salmonFirstDiscoveryReward: 525
+  shrimpFirstDiscoveryReward: 850
+  caviarFirstDiscoveryReward: 1370
+  oysterFirstDiscoveryReward: 2150
+  lobsterFirstDiscoveryReward: 3600
+  wormsCatReward: 50
+  betterCatReward: 100
+  tastyCatReward: 200
+  satisfiedCatReward: 400
+  fullCatReward: 600
+  happyCatReward: 850
+  royalCatReward: 1400

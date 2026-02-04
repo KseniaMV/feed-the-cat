@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e0ca5fef8edea847b7b362213f75e81, type: 3}
+  m_Name: SoupData
+  m_EditorClassIdentifier: 
+  foodType: 4
+  foodName: "\u0421\u0443\u043F\u0447\u0438\u043A \u0441 \u0444\u0440\u0438\u043A\u0430\u0434\u0435\u043B\u044C\u043A\u0430\u043C\u0438
+    \u0438 \u0437\u0435\u043B\u0435\u043D\u044C\u044E"
+  description: "\u041D\u0430\u0432\u0430\u0440\u0438\u0441\u0442\u044B\u0439 \u0441\u0443\u043F\u0447\u0438\u043A
+    \u0441 \u0444\u0440\u0438\u043A\u0430\u0434\u0435\u043B\u044C\u043A\u0430\u043C\u0438
+    \u0438 \u0437\u0435\u043B\u0435\u043D\u044C\u044E"
+  category: 1
+  rarity: 2
+  foodSprite: {fileID: 21300000, guid: 7066fe22c5e26ae4195b1b6f78286b28, type: 3}
+  foodPrefab: {fileID: 6703809756601853920, guid: 9e33c0adf7f5a88469b9e9ce559ef00b, type: 3}
+  experienceReward: 70
+  nextLevelFood: {fileID: 11400000, guid: 2a1b45509eb2d4e4f9982ae584cfaa63, type: 2}
+  requiredExperience: 0
+  canSpawnAtStart: 0
