@@ -19,7 +19,7 @@ MonoBehaviour:
     \u0447\u0442\u043E \u0442\u0435\u043F\u0435\u0440\u044C \u043E\u043D \u043C\u043E\u0436\u0435\u0442
     \u043D\u0435 \u0434\u0443\u043C\u0430\u0442\u044C \u043E \u0435\u0434\u0435!"
   requiredExperience: 7200
-  catStateSprite: {fileID: -4061139151372345081, guid: 914e175f07c9a0946b7ef2dc6521c450, type: 3}
+  catStateSprite: {fileID: 21300000, guid: b12dc516b1fbc894a8a8e87defefec1a, type: 3}
   coinReward: 850
   displayOrder: 6
   isDefaultState: 0

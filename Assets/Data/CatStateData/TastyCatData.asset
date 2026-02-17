@@ -17,7 +17,7 @@ MonoBehaviour:
   description: "\u0423\u0440\u0430! \u0427\u0442\u043E-\u0442\u043E \u0432\u043A\u0443\u0441\u043D\u043E\u0435
     \u0441\u044A\u0435\u0434\u0435\u043D\u043E!"
   requiredExperience: 1600
-  catStateSprite: {fileID: -5541767704666112110, guid: 914e175f07c9a0946b7ef2dc6521c450, type: 3}
+  catStateSprite: {fileID: 21300000, guid: 8626751f178d28244987fb13172e0de8, type: 3}
   coinReward: 200
   displayOrder: 3
   isDefaultState: 0

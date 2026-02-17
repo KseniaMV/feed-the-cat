@@ -29,7 +29,7 @@ RectTransform:
   m_GameObject: {fileID: 9034276328224162342}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 0.22, y: 0.22, z: 1}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -100,8 +100,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 2.4
+  m_Offset: {x: -0.61, y: -0.52}
+  m_Radius: 5
 --- !u!212 &-782736944454072917
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -146,12 +146,12 @@ SpriteRenderer:
   m_SortingLayerID: 1295706599
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: efb97a0eb8d42be4589df1bcdb46ca0f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c9080ad87e981a048b1916d299401499, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.8, y: 4.49}
+  m_Size: {x: 9.55, y: 8.69}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -174,11 +174,10 @@ MonoBehaviour:
   rigidBody: {fileID: 841295590475617792}
   foodCollider: {fileID: 2407647060512143478}
   animator: {fileID: 0}
-  isDragging: 0
-  isInSpawnPoint: 1
-  inContainer: 0
-  hasBeenDropped: 0
-  isCrossingTopBoundary: 0
-  isFirstCollision: 0
+  inSpawnPoint: 1
+  isDragble: 0
+  isFalling: 0
+  isDroped: 0
+  isInWarningZone: 0
   foodSpawner: {fileID: 0}
   mergeManager: {fileID: 0}
