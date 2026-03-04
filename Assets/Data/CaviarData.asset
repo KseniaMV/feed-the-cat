@@ -20,7 +20,7 @@ MonoBehaviour:
     \u0438 \u043A\u0440\u0430\u0441\u043D\u043E\u0439 \u0438\u0433\u0440\u043E\u0439"
   category: 3
   rarity: 4
-  foodSprite: {fileID: 21300000, guid: b9e094d34e05add44bad15eb6127d93a, type: 3}
+  foodSprite: {fileID: 21300000, guid: 8deb6188c1dd76f4b8fd0467d1081cee, type: 3}
   foodPrefab: {fileID: 2514143007899556152, guid: fade3a2bcb69320489b214d6d6c617c8, type: 3}
   experienceReward: 400
   nextLevelFood: {fileID: 11400000, guid: 87b828d297edd15408a041243ebb5275, type: 2}

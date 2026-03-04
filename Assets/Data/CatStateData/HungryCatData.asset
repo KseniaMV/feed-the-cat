@@ -18,10 +18,8 @@ MonoBehaviour:
     \u0438\u0437\u0434\u0430\u0435\u0442 \u0433\u043E\u043B\u043E\u0434\u043D\u044B\u0435
     \u0437\u0432\u0443\u043A\u0438!"
   requiredExperience: 0
-  catStateSprite: {fileID: -7286167982365291101, guid: 914e175f07c9a0946b7ef2dc6521c450, type: 3}
-  stateIcon: {fileID: 0}
+  catStateSprite: {fileID: 21300000, guid: e9cc7b6ba14449244915c3d0262a536b, type: 3}
   coinReward: 0
-  experienceBonus: 0
   displayOrder: 0
   isDefaultState: 1
   specialEffects: 

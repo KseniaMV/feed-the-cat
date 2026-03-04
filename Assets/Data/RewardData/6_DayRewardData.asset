@@ -19,6 +19,6 @@ MonoBehaviour:
   bonusCount_1: 700
   bonusCount_2: 1
   bonusCount_3: 
-  bonusSprite_1: {fileID: 21300000, guid: 3cd37949a0b58034a9a20fb6c3dc40ae, type: 3}
-  bonusSprite_2: {fileID: 21300000, guid: a87d9336cd4c70c4592b6fea309a5844, type: 3}
+  bonusSprite_1: {fileID: 21300000, guid: 7f7e69d7c386fee45b7c251a3eb7d459, type: 3}
+  bonusSprite_2: {fileID: 21300000, guid: 901b8d1ee0a58154bb51d79bcd004522, type: 3}
   bonusSprite_3: {fileID: 0}

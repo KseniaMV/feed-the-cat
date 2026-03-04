@@ -21,10 +21,9 @@ MonoBehaviour:
     \u0438 \u043B\u0438\u0441\u0442\u044C\u044F\u043C\u0438 \u0441\u0430\u043B\u0430\u0442\u0430"
   category: 0
   rarity: 1
-  foodSprite: {fileID: 21300000, guid: 5e0439a3d8e020c4daa7498557ba8d7f, type: 3}
+  foodSprite: {fileID: 21300000, guid: 5dd5b618f56867b4d95a60f332e6806a, type: 3}
   foodPrefab: {fileID: 7381929756692244465, guid: 6af7545cac568b44689afbcfb8a7c1d6, type: 3}
   experienceReward: 25
-  coinReward: 75
   nextLevelFood: {fileID: 11400000, guid: f4f69503f4643734cba665a17d4f339e, type: 2}
   requiredExperience: 0
   canSpawnAtStart: 0
