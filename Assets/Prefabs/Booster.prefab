@@ -178,6 +178,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -314,7 +315,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b66bd931c65e6c2459457cebb5eb40dd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 28c1a1501bea2104982d7df08a4683a4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
