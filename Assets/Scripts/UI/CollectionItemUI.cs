@@ -18,9 +18,6 @@ public class CollectionItemUI : MonoBehaviour
     [Tooltip("Описание продукта/достижения")]
     public TextMeshProUGUI collectionItemTitle;
     
-    [Tooltip("Иконка закрытого статуса")]
-    public GameObject collectionItemStatusClosedIcon;
-    
     [Tooltip("Иконка открытого статуса")]
     public GameObject collectionItemStatusOpenIcon;
     
@@ -81,11 +78,11 @@ public class CollectionItemUI : MonoBehaviour
         // Показываем награду за первое открытие, если она есть, иначе награду за цель
         // Для сосиски не показываем награду вообще (isDefaultProduct = true)
         string rewardText = "";
-        if (!isDefaultProduct)
+        if (!isDefaultProduct && isUnlocked)
         {
             rewardText = firstDiscoveryReward > 0 ? firstDiscoveryReward.ToString() : goalReward.ToString();
+            SetRewardDisplay(!isDefaultProduct, rewardText);
         }
-        SetRewardDisplay(!isDefaultProduct, rewardText);
     }
     
     /// <summary>
@@ -120,7 +117,10 @@ public class CollectionItemUI : MonoBehaviour
         
         // Устанавливаем награду и блок награды
         bool isDefaultState = catStateData.isDefaultState || catStateData.satisfactionLevel == CatSatisfactionLevel.Hungry;
-        SetRewardDisplay(!isDefaultState, catStateData.coinReward.ToString());
+        if(isUnlocked) {
+            SetRewardDisplay(!isDefaultState, catStateData.coinReward.ToString());
+        }
+        
     }
     
     
@@ -130,9 +130,6 @@ public class CollectionItemUI : MonoBehaviour
     /// <param name="isUnlocked">Открыт ли элемент</param>
     private void SetUnlockStatus(bool isUnlocked)
     {
-        if (collectionItemStatusClosedIcon != null)
-            collectionItemStatusClosedIcon.SetActive(!isUnlocked);
-            
         if (collectionItemStatusOpenIcon != null)
             collectionItemStatusOpenIcon.SetActive(isUnlocked);
     }

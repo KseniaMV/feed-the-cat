@@ -92,7 +92,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4267491651123347611
 RectTransform:
   m_ObjectHideFlags: 0
@@ -323,7 +323,6 @@ MonoBehaviour:
   collectionItemImage: {fileID: 1535531864558839638}
   collectionItemDescription: {fileID: 5409563807667857285}
   collectionItemTitle: {fileID: 4757647764305409341}
-  collectionItemStatusClosedIcon: {fileID: 0}
   collectionItemStatusOpenIcon: {fileID: 936043500021988579}
   rewardInfoText: {fileID: 1712577191240569735}
   rewardBlock: {fileID: 8629112328046596645}
@@ -701,7 +700,7 @@ MonoBehaviour:
   m_fontSizeMin: 22
   m_fontSizeMax: 32
   m_fontStyle: 1
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -848,8 +847,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -3.9776, y: -23.388}
-  m_SizeDelta: {x: 413.57, y: -96.775}
+  m_AnchoredPosition: {x: -4.8155, y: -23.8069}
+  m_SizeDelta: {x: 393.4623, y: -116.045}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2435905902480914260
 CanvasRenderer:
@@ -966,7 +965,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7968633232098074303
 RectTransform:
   m_ObjectHideFlags: 0

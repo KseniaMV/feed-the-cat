@@ -18,19 +18,14 @@ public class DailyRewardManager : MonoBehaviour
     public GameObject bonusPanel;
     [Tooltip("Панель бонусов следующего дня")]
     public GameObject nextDayBonusPanel;
-    [Tooltip("Титул панели наград")]
-    public TMP_Text rewardText;
+    [Tooltip("плашка стартового бонуса")]
+    public GameObject startBonusMark;
     
     [Header("Префабы")]
     [Tooltip("Префаб бонуса для текущего дня")]
     public GameObject bonusPrefab;
     [Tooltip("Префаб бонуса для следующего дня")]
     public GameObject nextDayBonusPrefab;
-
-    [Tooltip("Титул стартового бонуса")]
-    public string startRewardText = "Стартовый бонус";
-    [Tooltip("Титул ежедневного бонуса")]
-    public string dailyRewardText = "Ежедневный бонус";
 
     [Header("Данные по датам")]
     public int currentDay = 0;
@@ -180,22 +175,16 @@ public class DailyRewardManager : MonoBehaviour
         if (currentDay == 0)
         {
             currentRewardData = startGameReward;
-            if (rewardText != null)
-            {
-                rewardText.text = startRewardText;
-            }
+            startBonusMark.SetActive(true);
         }
         else
         {
             // Дни 1-7 (индексы массива 0-6)
+            startBonusMark.SetActive(false);
             int rewardIndex = currentDay - 1;
             if (rewardIndex >= 0 && rewardIndex < rewardData.Length)
             {
                 currentRewardData = rewardData[rewardIndex];
-                if (rewardText != null)
-                {
-                    rewardText.text = dailyRewardText + " - День " + currentDay;
-                }
             }
             else
             {
