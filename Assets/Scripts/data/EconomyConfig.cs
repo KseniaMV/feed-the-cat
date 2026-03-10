@@ -9,10 +9,10 @@ public class EconomyConfig : ScriptableObject
 {
     [Header("Цены бустеров (в монетах)")]
     [Tooltip("Цена лапки")]
-    public int pawPrice = 75;
+    public int pawPrice = 750;
     
     [Tooltip("Цена кота-обжорки")]
-    public int catPrice = 150;
+    public int catPrice = 2450;
     
 
     [Header("Опыт за продукты")]

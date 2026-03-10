@@ -304,7 +304,7 @@ GameObject:
   - component: {fileID: 27365488}
   - component: {fileID: 27365487}
   m_Layer: 5
-  m_Name: coinsPack_count (1)
+  m_Name: pawPack_count
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -601,7 +601,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 1221}
+  m_AnchoredPosition: {x: 0, y: 1250}
   m_SizeDelta: {x: 870, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &40008397
@@ -1476,7 +1476,7 @@ GameObject:
   - component: {fileID: 142199320}
   - component: {fileID: 142199319}
   m_Layer: 5
-  m_Name: coinsPack_price
+  m_Name: pack1_price
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2024,7 +2024,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 101.59, y: 57.929977}
-  m_SizeDelta: {x: 123.63, y: 115.86}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &165129079
 MonoBehaviour:
@@ -4822,6 +4822,21 @@ MonoBehaviour:
   confirmPurchaseButton: {fileID: 290666986}
   coinsDisplayText: {fileID: 1846375755}
   economyConfig: {fileID: 11400000, guid: ebaf33f75f2318a40b5531164f403acb, type: 2}
+  packConfig: {fileID: 11400000, guid: 1e35f9b307f70194dbe0b1505c24c05a, type: 2}
+  pawPriceText: {fileID: 1473036079}
+  catPriceText: {fileID: 1365538089}
+  coinsPackText: {fileID: 530311383}
+  coinsPackPriceText: {fileID: 494868949}
+  pack1CoinsText: {fileID: 533961845}
+  pack1BombsText: {fileID: 560881309}
+  pack1PriceText: {fileID: 142199319}
+  pack2BombsText: {fileID: 1813724619}
+  pack2PawsText: {fileID: 1212930221}
+  pack2PriceText: {fileID: 489626069}
+  pack3BombsText: {fileID: 1585299207}
+  pack3PawsText: {fileID: 27365487}
+  pack3CatsText: {fileID: 1825426118}
+  pack3PriceText: {fileID: 1591753826}
   bombSprite: {fileID: 21300000, guid: 089576b446d71dc4e9fe99d5c70aa328, type: 3}
   pawSprite: {fileID: 21300000, guid: 6cab2a9b44dd2fc4984906451c8a965e, type: 3}
   catSprite: {fileID: 21300000, guid: 3e5748fbaa1ac1746ab352ccab4d227c, type: 3}
@@ -5496,7 +5511,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 174}
+  m_AnchoredPosition: {x: 0, y: 253}
   m_SizeDelta: {x: 870, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &483884867
@@ -5577,7 +5592,7 @@ GameObject:
   - component: {fileID: 489626070}
   - component: {fileID: 489626069}
   m_Layer: 5
-  m_Name: coinsPack_price
+  m_Name: pack2_price
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6686,7 +6701,7 @@ GameObject:
   - component: {fileID: 533961846}
   - component: {fileID: 533961845}
   m_Layer: 5
-  m_Name: coinsPack_count (1)
+  m_Name: coinsPack_count
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7197,7 +7212,7 @@ GameObject:
   - component: {fileID: 560881310}
   - component: {fileID: 560881309}
   m_Layer: 5
-  m_Name: coinsPack_count
+  m_Name: bombPack_count
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8560,7 +8575,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 977658128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.2569322}
+  m_AnchorMin: {x: 0, y: 0.25693226}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -9712,7 +9727,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 41.7, y: 105.2}
+  m_AnchoredPosition: {x: 41.699997, y: 15}
   m_SizeDelta: {x: 72.69, y: 29.69}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &815109221
@@ -13037,7 +13052,7 @@ GameObject:
   - component: {fileID: 1212930222}
   - component: {fileID: 1212930221}
   m_Layer: 5
-  m_Name: coinsPack_count (1)
+  m_Name: pawPack_count
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14107,8 +14122,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 102.99997, y: 106.49992}
-  m_SizeDelta: {x: 40, y: 40}
+  m_AnchoredPosition: {x: 102, y: 14}
+  m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1254917199
 MonoBehaviour:
@@ -18049,7 +18064,7 @@ GameObject:
   - component: {fileID: 1585299208}
   - component: {fileID: 1585299207}
   m_Layer: 5
-  m_Name: coinsPack_count
+  m_Name: bombPack_count
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18186,7 +18201,7 @@ GameObject:
   - component: {fileID: 1591753827}
   - component: {fileID: 1591753826}
   m_Layer: 5
-  m_Name: coinsPack_price
+  m_Name: pack3_price
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18357,7 +18372,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectionListPanel: {fileID: 1537765610}
   collectionItemList: {fileID: 2132183941}
-  collectionItemPrefab: {fileID: 2999450212814596201, guid: 9ac41b8877d82654fb86ab86b76ae86c, type: 3}
+  foodCollectionItemPrefab: {fileID: 2999450212814596201, guid: 9ac41b8877d82654fb86ab86b76ae86c, type: 3}
+  catCollectionItemPrefab: {fileID: 2999450212814596201, guid: 2f79b05af94a90e48b9f1a75c386d06c, type: 3}
   collectionTitleText: {fileID: 477296023}
   basicCollection:
     collectionName: "\u0411\u0430\u0437\u043E\u0432\u0430\u044F \u043A\u043E\u043B\u043B\u0435\u043A\u0446\u0438\u044F"
@@ -21099,7 +21115,7 @@ GameObject:
   - component: {fileID: 1813724620}
   - component: {fileID: 1813724619}
   m_Layer: 5
-  m_Name: coinsPack_count
+  m_Name: bombPack_count
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21238,7 +21254,7 @@ GameObject:
   - component: {fileID: 1825426119}
   - component: {fileID: 1825426118}
   m_Layer: 5
-  m_Name: coinsPack_count (2)
+  m_Name: catPack_count
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

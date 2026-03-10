@@ -40,7 +40,7 @@ public class UIManager : MonoBehaviour
 
     [Header("Панель магазина")]
     public GameObject shopPanel;
-    
+
     [Header("Панель проигрыша")]
     public GameObject gameOverPanel;
 
@@ -70,7 +70,7 @@ public class UIManager : MonoBehaviour
             UpdateExperienceRecordDisplay(); // Обновляем отображение рекорда при инициализации
         }
     }
-    
+
     /// <summary>
     /// Подписывается на события GameManager
     /// </summary>
@@ -244,7 +244,7 @@ public class UIManager : MonoBehaviour
             default: return "Неизвестно";
         }
     }
-    
+
     private float CalculateSatisfactionProgress(CatSatisfactionLevel currentLevel)
     {
         if (gameManager == null || gameManager.catStateManager == null) return 0f;

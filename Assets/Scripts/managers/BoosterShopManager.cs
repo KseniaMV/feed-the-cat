@@ -57,13 +57,36 @@ public class BoosterShopManager : MonoBehaviour
     [Header("Настройки бустеров")]
     [Tooltip("Конфигурация экономики")]
     public EconomyConfig economyConfig;
+    public ShopPackageConfig packConfig;
+
+    [Header("Цены бустеров")]
+    public TextMeshProUGUI pawPriceText;
+    public TextMeshProUGUI catPriceText;
+
+    [Header("Пакет монет")]
+    public TextMeshProUGUI coinsPackText;
+    public TextMeshProUGUI coinsPackPriceText;
+    [Header("Пакет 1")]
+    public TextMeshProUGUI pack1CoinsText;
+    public TextMeshProUGUI pack1BombsText;
+    public TextMeshProUGUI pack1PriceText;
+     [Header("Пакет 2")]
+    public TextMeshProUGUI pack2BombsText;
+    public TextMeshProUGUI pack2PawsText;
+    public TextMeshProUGUI pack2PriceText;
+     [Header("Пакет 3")]
+    public TextMeshProUGUI pack3BombsText;
+    public TextMeshProUGUI pack3PawsText;
+    public TextMeshProUGUI pack3CatsText;
+    public TextMeshProUGUI pack3PriceText;
+
     
     
     [Tooltip("Цена лапки (берется из EconomyConfig)")]
-    public int pawPrice => economyConfig != null ? economyConfig.pawPrice : 75;
+    public int pawPrice => economyConfig != null ? economyConfig.pawPrice : 0;
     
     [Tooltip("Цена кота-обжорки (берется из EconomyConfig)")]
-    public int catPrice => economyConfig != null ? economyConfig.catPrice : 150;
+    public int catPrice => economyConfig != null ? economyConfig.catPrice : 0;
 
     [Header("Спрайты бустеров")]
     [Tooltip("Спрайт бомбочки")]
@@ -89,6 +112,8 @@ public class BoosterShopManager : MonoBehaviour
         InitializeReferences();
         SetupButtonListeners();
         UpdateUI();
+        SetUpBostersPrice();
+        SetPacksCount();
     }
 
     /// <summary>
@@ -118,6 +143,60 @@ public class BoosterShopManager : MonoBehaviour
         // Также подписываемся на события GameDataManager для надежности
         GameDataManager.OnCoinsChanged += UpdateCoinsDisplay;
     }
+
+    private void SetUpBostersPrice () {
+        pawPriceText.text = pawPrice.ToString();
+        catPriceText.text = catPrice.ToString();
+    }
+
+    private void SetPacksCount() 
+    {
+        // Получаем все пакеты через метод GetAllPackages()
+        ShopPackage[] packs = packConfig.GetAllPackages();
+        Debug.Log($"Найдено пакетов: {packs.Length}");
+
+        // Или напрямую работаем со списком shopPackages (альтернативный вариант)
+        // List<ShopPackage> packages = packConfig.shopPackages;
+
+        // Получаем пакеты по ID
+        ShopPackage coins_pack = packConfig.GetPackageById("coins_pack");
+        ShopPackage pack_1 = packConfig.GetPackageById("pack_1");
+        ShopPackage pack_2 = packConfig.GetPackageById("pack_2");
+        ShopPackage pack_3 = packConfig.GetPackageById("pack_3");
+
+        // Заполняем UI для пакета монет
+        if (coins_pack != null)
+        {
+            coinsPackText.text = coins_pack.coins.ToString();
+            coinsPackPriceText.text = coins_pack.price;
+        }
+
+        // Заполняем UI для pack_1
+        if (pack_1 != null)
+        {
+            pack1CoinsText.text = pack_1.coins.ToString();
+            pack1BombsText.text = pack_1.bombs.ToString();
+            pack1PriceText.text = pack_1.price;
+        }
+
+        // Заполняем UI для pack_2
+        if (pack_2 != null)
+        {
+            pack2BombsText.text = pack_2.bombs.ToString();
+            pack2PawsText.text = pack_2.paws.ToString();
+            pack2PriceText.text = pack_2.price;
+        }
+
+        // Заполняем UI для pack_3
+        if (pack_3 != null)
+        {
+            pack3BombsText.text = pack_3.bombs.ToString();
+            pack3PawsText.text = pack_3.paws.ToString();
+            pack3CatsText.text = pack_3.cats.ToString();
+            pack3PriceText.text = pack_3.price;
+        }
+    }
+    
 
     /// <summary>
     /// Настраивает обработчики кнопок

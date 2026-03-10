@@ -68,11 +68,11 @@ public class PaymentManager : MonoBehaviour
             {
                 productId = "pack_1",
                 packageName = "Пакет 1",
-                description = "10 бомбочек + 10 лапок + 2 кота-обжорки (без рекламы!)",
-                coins = 0,
+                description = "1500 монет + 10 бомбочек (без рекламы!)",
+                coins = 1500,
                 bombs = 10,
-                paws = 10,
-                cats = 2,
+                paws = 0,
+                cats = 0,
                 price = "199.00",
                 currency = "RUB"
             },
@@ -80,11 +80,11 @@ public class PaymentManager : MonoBehaviour
             {
                 productId = "pack_2",
                 packageName = "Пакет 2",
-                description = "15 бомбочек + 15 лапок + 5 котов-обжорок (без рекламы!)",
+                description = "15 бомбочек + 5 лапок (без рекламы!)",
                 coins = 0,
                 bombs = 15,
-                paws = 15,
-                cats = 5,
+                paws = 5,
+                cats = 0,
                 price = "299.00",
                 currency = "RUB"
             },
@@ -92,11 +92,11 @@ public class PaymentManager : MonoBehaviour
             {
                 productId = "pack_3",
                 packageName = "Пакет 3",
-                description = "25 бомбочек + 25 лапок + 10 котов-обжорок (без рекламы!)",
+                description = "15 бомбочек + 10 лапок + 5 котов-обжорок (без рекламы!)",
                 coins = 0,
-                bombs = 25,
-                paws = 25,
-                cats = 10,
+                bombs = 15,
+                paws = 10,
+                cats = 5,
                 price = "499.00",
                 currency = "RUB"
             }

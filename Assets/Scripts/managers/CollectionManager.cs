@@ -31,8 +31,9 @@ public class CollectionManager : MonoBehaviour
     [Tooltip("Контейнер для элементов коллекции")]
     public Transform collectionItemList;
     
-    [Tooltip("Префаб элемента коллекции")]
-    public GameObject collectionItemPrefab;
+    [Tooltip("Префабы элементаов коллекций")]
+    public GameObject foodCollectionItemPrefab;
+    public GameObject catCollectionItemPrefab;
     
     [Tooltip("Текст названия коллекции")]
     public TMPro.TextMeshProUGUI collectionTitleText;
@@ -65,7 +66,7 @@ public class CollectionManager : MonoBehaviour
     /// <param name="collectionName">Имя коллекции (basic, catStates)</param>
     public void ShowCollection(string collectionName)
     {
-        if (collectionListPanel == null || collectionItemList == null || collectionItemPrefab == null)
+        if (collectionListPanel == null || collectionItemList == null || foodCollectionItemPrefab == null || catCollectionItemPrefab == null)
         {
             Debug.LogError("CollectionManager: Не все UI элементы настроены!");
             return;
@@ -112,7 +113,7 @@ public class CollectionManager : MonoBehaviour
     /// <param name="foodData">Данные продукта</param>
     private void CreateCollectionItem(FoodData foodData)
     {
-        GameObject itemObject = Instantiate(collectionItemPrefab, collectionItemList);
+        GameObject itemObject = Instantiate(foodCollectionItemPrefab, collectionItemList);
         CollectionItemUI itemUI = itemObject.GetComponent<CollectionItemUI>();
         
         if (itemUI != null)
@@ -141,7 +142,7 @@ public class CollectionManager : MonoBehaviour
             
             foreach (CatStateData stateData in sortedStates)
             {
-                GameObject itemObject = Instantiate(collectionItemPrefab, collectionItemList);
+                GameObject itemObject = Instantiate(catCollectionItemPrefab, collectionItemList);
                 CollectionItemUI itemUI = itemObject.GetComponent<CollectionItemUI>();
                 
                 if (itemUI != null)
@@ -162,7 +163,7 @@ public class CollectionManager : MonoBehaviour
             
             foreach (CatStateData stateData in sortedStates)
             {
-                GameObject itemObject = Instantiate(collectionItemPrefab, collectionItemList);
+                GameObject itemObject = Instantiate(catCollectionItemPrefab, collectionItemList);
                 CollectionItemUI itemUI = itemObject.GetComponent<CollectionItemUI>();
                 
                 if (itemUI != null)

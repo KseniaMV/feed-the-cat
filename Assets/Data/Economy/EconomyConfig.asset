@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68b8ec433ffd47746b3b079ee0b17859, type: 3}
   m_Name: EconomyConfig
   m_EditorClassIdentifier: 
-  pawPrice: 75
-  catPrice: 150
+  pawPrice: 750
+  catPrice: 2350
   sausageExperience: 0
   eggsExperience: 10
   sandwichExperience: 25
