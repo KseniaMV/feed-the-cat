@@ -441,7 +441,6 @@ public class UIManager : MonoBehaviour
 
         shopButton?.gameObject.SetActive(false);
         collectionButton?.gameObject.SetActive(false);
-        homeButton?.gameObject.SetActive(false);
     }
     
     /// <summary>
