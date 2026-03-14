@@ -398,3 +398,4 @@ MonoBehaviour:
   isInWarningZone: 0
   foodSpawner: {fileID: 0}
   mergeManager: {fileID: 0}
+  destroy_sound: {fileID: 0}

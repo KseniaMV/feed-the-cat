@@ -149,6 +149,7 @@ MonoBehaviour:
   isInWarningZone: 0
   foodSpawner: {fileID: 0}
   mergeManager: {fileID: 0}
+  destroy_sound: {fileID: 0}
 --- !u!70 &3982793165302531431
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

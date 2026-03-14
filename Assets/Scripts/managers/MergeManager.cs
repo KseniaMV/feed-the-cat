@@ -19,7 +19,7 @@ public class MergeManager : MonoBehaviour
     public GameObject mergeEffect;
     
     [Tooltip("Звук слияния (опционально)")]
-    public AudioClip mergeSound;
+    public SoundManager soundManager;
     
     [Header("Ссылки")]
     [Tooltip("Ссылка на спавнер продуктов")]
@@ -100,10 +100,11 @@ public class MergeManager : MonoBehaviour
         // Уничтожаем старые продукты
         DestroyItem(item1);
         DestroyItem(item2);
-        
+    
         // Уведомляем GameManager о слиянии
         if (gameManager != null)
         {
+            soundManager.GetComponent<SoundManager>().OnFoodDestroy();
             gameManager.OnMergeCompleted(item1.foodData, item1.foodData.nextLevelFood);
         }
         
@@ -149,9 +150,9 @@ public class MergeManager : MonoBehaviour
         }
         
         // Воспроизводим звук слияния
-        if (mergeSound != null)
+        if (soundManager != null)
         {
-            AudioSource.PlayClipAtPoint(mergeSound, position);
+            
         }
     }
     

@@ -90,6 +90,7 @@ MonoBehaviour:
   isInWarningZone: 0
   foodSpawner: {fileID: 0}
   mergeManager: {fileID: 0}
+  destroy_sound: {fileID: 0}
 --- !u!212 &-1287556964718354589
 SpriteRenderer:
   serializedVersion: 2
