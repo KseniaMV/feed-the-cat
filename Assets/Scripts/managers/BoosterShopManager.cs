@@ -485,7 +485,7 @@ public class BoosterShopManager : MonoBehaviour
         switch (boosterType)
         {
             case "bomb": return "БОМБОЧКА";
-            case "paw": return "ЛАПКА";
+            case "paw": return "ЛАПКА-ЗАГРЕБУШКА";
             case "cat": return "КОТ-ОБЖОРКА";
             default: return "Неизвестно";
         }
