@@ -10,26 +10,37 @@ public class TutorialManager : MonoBehaviour
 
     public GameObject game_pointer_tutorial;
 
-    public bool is_collection_tutorial_and = false;
-
-    public bool is_shop_tutorial_and = false;
-
-    public bool is_game_tutorial_and = false;
-
-    public bool is_tutorial_complete = false;
+    public GameObject goal_tutorial_arrow;
 
     public void ShowCollectionTutorial(){
-        tutorialPanel.SetActive(true);
         arrow_to_collections.SetActive(true);
     }
 
     public void ShowShopTutorial(){
-        tutorialPanel.SetActive(true);
         arrow_to_shop.SetActive(true);
     }
 
+    public void ShowGoalTutorial(){
+        goal_tutorial_arrow.SetActive(true);
+    }
+
     public void ShowGameTutorial(){
-        tutorialPanel.SetActive(true);
-        game_pointer_tutorial.SetActive(true);
+        if(TutorialData.is_game_tutorial_and == false) {
+            tutorialPanel.SetActive(true);
+            game_pointer_tutorial.SetActive(true);
+            Invoke("ShowGoalTutorial", 2f);
+        }
+    }
+
+    public void ShowCollectionAndShopTutorial() {
+        if(TutorialData.is_shop_and_collection_tutorial_and == false) {
+            tutorialPanel.SetActive(true);
+            if(TutorialData.is_collections_tutorial_and == false) {
+                ShowCollectionTutorial();
+            }
+            if(TutorialData.is_shop_tutorial_and == false) {
+                Invoke("ShowShopTutorial", 2.3f);
+            }
+        }
     }
 }

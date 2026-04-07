@@ -38,6 +38,9 @@ public class GameManager : MonoBehaviour
     
     [Tooltip("Ссылка на менеджер бустеров")]
     public BoosterManager boosterManager;
+
+    [Tooltip("Ссылка на менеджер туториала")]
+    public TutorialManager tutorialManager;
     
     [Tooltip("Ссылка на менеджер ежедневных наград")]
     public DailyRewardManager dailyRewardManager;
@@ -185,11 +188,20 @@ public class GameManager : MonoBehaviour
             return;
         }
         
-        if (dailyRewardManager.IsRewardClaimedToday()) return;
+        if (dailyRewardManager.IsRewardClaimedToday()) {
+            ShowUITutorial();
+            return;
+        }
         
         dailyRewardManager.SetCurrentDailyReward();
         dailyRewardManager.SetNextDayReward();
         dailyRewardManager.ShowRewardPanel();
+    }
+
+    private void ShowUITutorial(){
+        if(TutorialData.is_shop_and_collection_tutorial_and == false) {
+            tutorialManager.ShowCollectionAndShopTutorial();
+        }
     }
     
     /// <summary>
@@ -270,6 +282,7 @@ public class GameManager : MonoBehaviour
         {
             CheckProductsInContainer();
         }
+
     }
     
     
@@ -917,6 +930,7 @@ public class GameManager : MonoBehaviour
         }
         
         boosterManager?.UpdateBoosterUI();
+        tutorialManager?.ShowGameTutorial();
     }
     
     /// <summary>
