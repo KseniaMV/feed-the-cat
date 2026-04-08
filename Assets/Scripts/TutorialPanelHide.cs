@@ -14,11 +14,10 @@ public class TutorialPanelHide : MonoBehaviour
     public GameObject pointer_arrow_1;
     public GameObject pointer_arrow_2;
  
-    public void CloseCollectionAndShopTutorial(){
+    public void CloseShopTutorial(){
         tutorialPanel.SetActive(false);
         arrow_to_shop.SetActive(false);
         TutorialData.SetShopTutorialEnd();
-        TutorialData.SetShopAndCollectionTutorialEnd();
     }
 
      public void CloseCollectionTutorial(){

@@ -188,10 +188,8 @@ public class GameManager : MonoBehaviour
             return;
         }
         
-        if (dailyRewardManager.IsRewardClaimedToday()) {
-            ShowUITutorial();
-            return;
-        }
+        if (dailyRewardManager.IsRewardClaimedToday()) return;
+        
         
         dailyRewardManager.SetCurrentDailyReward();
         dailyRewardManager.SetNextDayReward();
@@ -199,9 +197,12 @@ public class GameManager : MonoBehaviour
     }
 
     private void ShowUITutorial(){
-        if(TutorialData.is_shop_and_collection_tutorial_and == false) {
-            tutorialManager.ShowCollectionAndShopTutorial();
-        }
+        if(TutorialData.is_collections_tutorial_and == true && TutorialData.is_shop_tutorial_and == true) return;
+
+        if(TutorialData.is_shop_and_collection_tutorial_and == true) return;
+        
+        tutorialManager.ShowCollectionAndShopTutorial();
+        
     }
     
     /// <summary>
@@ -282,6 +283,8 @@ public class GameManager : MonoBehaviour
         {
             CheckProductsInContainer();
         }
+
+        if (dailyRewardManager.IsRewardClaimedToday()) ShowUITutorial();
 
     }
     
