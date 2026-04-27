@@ -23,6 +23,8 @@ public enum CatSatisfactionLevel
 /// </summary>
 public class GameManager : MonoBehaviour
 {
+    [Header("Ссылка на кота")]
+    public GameObject cat;
     [Header("Ссылки на системы")]
     [Tooltip("Ссылка на спавнер продуктов")]
     public FoodSpawner foodSpawner;
@@ -116,8 +118,6 @@ public class GameManager : MonoBehaviour
     // Пороги для системы проигрыша
     private const float TOP_BOUNDARY = 2.5f; // Верхняя граница контейнера согласно README.md
     
-    
-    
     private void Start()
     {
         ValidateReferences();
@@ -138,6 +138,11 @@ public class GameManager : MonoBehaviour
         
         GameDataManager.OnCoinsChanged += OnCoinsChangedFromDataManager;
         GameDataManager.OnBoosterCountChanged += OnBoosterCountChangedFromDataManager;
+
+        Debug.Log("ailyRewardManager.rewardPanel.activeSelf" + dailyRewardManager.rewardPanel.activeSelf);
+        if(dailyRewardManager.rewardPanel.activeSelf){
+            cat.SetActive(false);
+        }
     }
     
     /// <summary>
@@ -188,7 +193,10 @@ public class GameManager : MonoBehaviour
             return;
         }
         
-        if (dailyRewardManager.IsRewardClaimedToday()) return;
+        if (dailyRewardManager.IsRewardClaimedToday()) {
+            cat.SetActive(true);
+            return;
+        }
         
         
         dailyRewardManager.SetCurrentDailyReward();
